@@ -14,7 +14,10 @@ console.log(longWords(['couscous', 'soup', 'ceviche', 'solyanka' ,'taco'])); // 
 */
 
 let longWords = function(words) {
-    // Your code here 
+    // Your code here
+    // declared variable = array.method((indivdual item with in array) arrow function statement)
+    const wordLength = words.filter((word) => word.length > 5)
+    return wordLength;
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

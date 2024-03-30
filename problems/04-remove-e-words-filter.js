@@ -13,7 +13,10 @@ console.log(removeEWords('Enter the building')); // 'building'
 */
 
 let removeEWords = function(sentence) {
-    // Your code here 
+    // Your code here
+    const sentenceSplit = sentence.split(' ')
+    const removeE = sentenceSplit.filter((el) => !el.includes('e'))
+    return removeE.join(' ')
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
